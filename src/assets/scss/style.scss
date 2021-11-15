@@ -1,0 +1,31 @@
+@import './fonts';
+@import './bootstrap-reboot';
+@import './grid';
+
+body {
+  font-size: 16px;
+  @include reg;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a[href]:not([class]) {
+  color: #000000;
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@import './interface';
+
+@import './header/header';
+@import './header/header-media';
+

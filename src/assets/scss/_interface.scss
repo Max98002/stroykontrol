@@ -1,0 +1,76 @@
+.btn {
+
+  padding: 13px 25px;
+  border: 1px solid #212B31;
+  border-radius: 4px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+  background-color: transparent;
+  transition: all .2s;
+
+  &-dark {
+    background: #212B31;
+    color: #ffffff;
+    border: none;
+
+    &:hover {
+      background-color: darken(#212B31, 10%);
+    }
+  }
+
+  &-light {
+    background: #ffffff;
+    color: #212B31;
+
+    &:hover {
+      border-color: darken(#212B31, 10%);
+    }
+  }
+
+  &-menu {
+    position: absolute;
+    right: 15px;
+    top: 23px;
+    display: none;
+    flex-direction: column;
+    width: 50px;
+    cursor: pointer;
+
+    span {
+      background: #212B31;
+      border-radius: 10px;
+      height: 7px;
+      margin: 3px 0;
+      transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+      &:nth-of-type(1) {
+        width: 50%;
+      }
+
+      &:nth-of-type(2) {
+        width: 100%;
+      }
+
+      &:nth-of-type(3) {
+        width: 75%;
+      }
+    }
+
+    &_active {
+      span:nth-of-type(1) {
+        transform-origin: bottom;
+        transform: rotatez(45deg) translate(3px, 0px);
+      }
+
+      span:nth-of-type(2) {
+        transform-origin: top;
+        transform: rotatez(-45deg);
+      }
+
+      span:nth-of-type(3) {
+        transform-origin: bottom;
+        width: 50%;
+        transform: translate(21px, -6px) rotatez(45deg);
+      }
+    }
+  }
+}
