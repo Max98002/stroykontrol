@@ -1,0 +1,19 @@
+.hero {
+  &-title {
+    max-width: 818px;
+    font-size: 48px;
+    text-align: center;
+    color: #212B31;
+    @include reg;
+  }
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  &__btns {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    margin-bottom: 88px;
+  }
+}

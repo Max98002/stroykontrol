@@ -1,0 +1,12 @@
+.images {
+  margin-bottom: 148px;
+  &__title {
+    margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .images {
+    margin-bottom: 90px;
+  }
+}

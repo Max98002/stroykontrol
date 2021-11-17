@@ -19,6 +19,7 @@ a[href]:not([class]) {
 }
 
 img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -29,3 +30,9 @@ img {
 @import './header/header';
 @import './header/header-media';
 
+@import './hero/hero';
+@import './hero/hero-media';
+
+@import './images/images';
+
+@import './top-info/top-info';
