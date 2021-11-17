@@ -1,4 +1,5 @@
 .top-info {
+  margin-bottom: 142px;
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -34,6 +35,7 @@
 
 @media (max-width: 767.98px) {
   .top-info {
+    margin-bottom: 90px;
     &__wrapper {
       grid-template-columns: minmax(auto, 80%);
       justify-content: center;

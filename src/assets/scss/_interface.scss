@@ -75,3 +75,36 @@
     }
   }
 }
+
+.section {
+  &-title {
+    font-size: 32px;
+    text-align: center;
+    color: #212B31;
+    @include reg;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}
+
+@mixin orangeLine {
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: -2px;
+    transform: translateY(-50%);
+    width: 101%;
+    height: 16px;
+    background-color: #FFD042;
+    z-index: -1;
+  }
+}
+
+.orange-line {
+  position: relative;
+  @include orangeLine;
+}

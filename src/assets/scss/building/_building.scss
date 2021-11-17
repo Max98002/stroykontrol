@@ -1,0 +1,50 @@
+.building {
+  &__title {
+    margin: 90px auto;
+    max-width: 781px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #72787D;
+  }
+
+  &-wrapper {
+    display: grid;
+    grid-template-columns: minmax(auto, 542px) minmax(auto, 464px);
+    grid-auto-rows: auto;
+    justify-content: space-around;
+  }
+
+  &-bottom {
+    &__title {
+      margin: 0;
+      margin-bottom: 16px;
+      font-size: 32px;
+      color: #212B31;
+    }
+    &__subtitle {
+      font-size: 20px;
+      color: #72787D;
+      margin: 0;
+      margin-bottom: 28px;
+    }
+    &__tag {
+      font-size: 20px;
+      color: #212B31;
+      @include reg
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .building {
+    &-wrapper {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
+  }
+}
