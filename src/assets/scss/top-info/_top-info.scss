@@ -1,6 +1,43 @@
 .top-info {
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(1fr, 3);
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(174px, auto);
+    grid-column-gap: 41px;
+    grid-row-gap: 0px;
+  }
+
+  &__icon {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 48px;
+    height: 48px;
+  }
+
+  &__card {
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #212B31;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 16px;
+    color: #72787D;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .top-info {
+    &__wrapper {
+      grid-template-columns: minmax(auto, 80%);
+      justify-content: center;
+      row-gap: 20px;
+    }
   }
 }
