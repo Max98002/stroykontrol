@@ -1,0 +1,10 @@
+@media (max-width: 767.98px) {
+  .about {
+    &-row {
+      flex-flow: column nowrap;
+      &:nth-child(even) {
+        flex-flow: column nowrap;
+      }
+    }
+  }
+}

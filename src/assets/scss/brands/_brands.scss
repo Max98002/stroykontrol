@@ -1,0 +1,13 @@
+.brands {
+  margin-bottom: 78px;
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    border: 1px solid #EEF2F3;
+    border-left: none;
+    border-right: none;
+  }
+}

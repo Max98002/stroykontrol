@@ -85,8 +85,33 @@
   }
 
   &__title {
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 16px;
+  }
+
+  &-subtitle {
+    font-size: 20px;
+    text-align: center;
+    color: #72787D;
+  }
+
+  &__subtitle {
+    margin: 0 auto;
+    margin-bottom: 28px;
+    @include reg;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section {
+    &-title {
+      font-size: 32px;
+    }
+    &-subtitle {
+      font-size: 16px;
+      text-align: center;
+      color: #72787D;
+    }
   }
 }
 
