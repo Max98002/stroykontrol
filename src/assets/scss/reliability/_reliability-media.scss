@@ -1,0 +1,30 @@
+@media (max-width: 991.98px) {
+  .reliability {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-columns: auto;
+      grid-template-rows: auto;
+    }
+    &__card {
+      &:last-child {
+        grid-column: 1 / 3;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .reliability {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    &-bottom {
+      flex-flow: row wrap;
+      justify-content: center;
+      img, p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
