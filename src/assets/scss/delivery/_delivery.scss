@@ -1,0 +1,35 @@
+.delivery {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(150px, auto));
+    grid-auto-rows: minmax(150px, auto);
+    column-gap: 27px;
+    row-gap: 33px;
+    margin-top: 43px;
+  }
+  &__card {
+    display: grid;
+    grid-template-columns: minmax(48px, 48px) auto;
+    column-gap: 16px;
+  }
+  &__img {
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  &__title, &__subtitle {
+    margin: 0;
+  }
+  &__title {
+    margin-bottom: 11px;
+    @include reg;
+    font-size: 18px;
+    color: #212B31;
+  }
+  &__subtitle {
+    font-size: 16px;
+    color: #72787D;
+  }
+}
