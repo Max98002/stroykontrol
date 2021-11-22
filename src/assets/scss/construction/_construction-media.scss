@@ -1,0 +1,14 @@
+@media (max-width: 767.98px) {
+  .construction {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-image: none;
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-card {
+      margin-bottom: 20px;
+    }
+  }
+}

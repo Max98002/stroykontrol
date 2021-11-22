@@ -1,0 +1,93 @@
+.construction {
+  padding-top: 143px;
+  padding-bottom: 118px;
+  background: url("../image/construction/construction.png") #212B31 no-repeat right 143px;
+  &__title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #FFFFFF;
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 589px;
+    padding-left: 32px;
+    margin-bottom: 50px;
+    &__item {
+      position: relative;
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+      &::before {
+        content: "\2022";
+        position: absolute;
+        top: 8px;
+        left: -32px;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+    }
+    &__title {
+      @include reg;
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+    &__text {
+      margin: 0;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+  }
+  &__btns {
+    margin-bottom: 127px;
+  }
+  &__btn {
+    padding: 13px 25px;
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+    background-color: #fff;
+    border: none;
+    font-size: 17px;
+    color: #212B31;
+    &_dark {
+      background-color: transparent;
+      border: 1px solid #DADEDF;
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+      color: #fff;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 19px;
+  }
+  &-card {
+    max-width: 340px;
+    text-align: center;
+    &__icon {
+      margin: 0 auto;
+      margin-bottom: 20px;
+      width: 48px;
+      height: 48px;
+    }
+    &__title {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+    &__subtitle {
+      margin: 0;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.75);
+    }
+  }
+}
