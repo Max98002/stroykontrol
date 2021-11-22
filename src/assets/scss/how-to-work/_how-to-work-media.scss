@@ -1,0 +1,19 @@
+@media (max-width: 767.98px) {
+  .howToWork {
+    flex-direction: column;
+    &-list {
+      &__item {
+        padding-left: 30px;
+      }
+      &__tag {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+      }
+    }
+    &__btns {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
+  }
+}
