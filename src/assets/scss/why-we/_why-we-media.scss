@@ -76,5 +76,18 @@
         left: -5px;
       }
     }
+    &-images {
+      column-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .whyWe {
+    &-images {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

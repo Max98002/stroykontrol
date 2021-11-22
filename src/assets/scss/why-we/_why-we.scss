@@ -10,6 +10,7 @@
     grid-template-columns: 458px auto;
     grid-template-rows: auto;
     column-gap: 78px;
+    margin-bottom: 127px;
   }
 
   &-list {
@@ -119,4 +120,28 @@
     }
   }
 
+  &-images {
+    display: grid;
+    grid-template-columns: minmax(120px, auto) minmax(160px, auto) minmax(160px, auto);
+    grid-template-rows: repeat(2,minmax(200px, auto));
+    grid-auto-rows: auto;
+    column-gap: 110px;
+    row-gap: 41px;
+    max-width: 672px;
+    margin: 0 auto;
+    &__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      &:last-child {
+        grid-column: 2 / 3;
+      }
+    }
+    &__text {
+      font-size: 16px;
+      text-align: center;
+      color: #72787D;
+    }
+  }
 }
