@@ -1,0 +1,57 @@
+.optimization {
+  margin-bottom: 150px;
+  &-wrapper {
+    padding: 117px 38px;
+    border-radius: 6px;
+    background: url("../image/optimization/optimization.jpg") no-repeat center top / cover;
+    overflow: hidden;
+  }
+  &-title {
+    max-width: 980px;
+    text-align: center;
+    font-size: 48px;
+    color: #212B31;
+    @include reg;
+  }
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 54px;
+  }
+  &__btns {
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .optimization {
+    &-title {
+      font-size: 30px;
+    }
+    &__btn {
+      font-size: 12px;
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .optimization {
+    margin-bottom: 90px;
+    &-wrapper {
+      padding: 60px 20px;
+    }
+    &-title {
+      font-size: 18px;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__btn {
+      font-size: 10px;
+    }
+  }
+}
